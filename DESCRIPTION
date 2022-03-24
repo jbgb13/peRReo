@@ -3,7 +3,7 @@ Type: Package
 Title: Color Palettes inspired by reggaeton albums
 Version: 0.1.0
 Author: Juan B González
-Maintainer: juanbgonzalezblanco@gmail.com
+Maintainer: Juan B González <juanbgonzalezblanco@gmail.com>
 Description: Color palettes for R dataviz based on albums by some classical latin singer. Palettes vary on length and almost all of them are color-blind safe (except for 'ozuna' and 'rosalia'), checked using 'Chroma.js  Color Palette Helper' <https://gka.github.io/palettes/>.
 License: CCO
 Encoding: UTF-8
