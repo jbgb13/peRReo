@@ -48,24 +48,26 @@ latin_palettes=list(aventura=c("#284C46","#B3B177","#E18964","#192E27","#A8B4A3"
 #'
 #' This function builds palettes based on album covers by a selection of latin artists. The selection has been subjectively made by the author, my apologies. Almost all palettes, except for \code{ozuna} and \code{rosalia}, have been checked for color blind safety using \href{https://gka.github.io/palettes/#/9|s|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1}{Chroma.js Color Palette Helper}.
 #'
-#'  @param name Name of the color palette. Current options are \code{aventura}, \code{badbunny1}, \code{badbunny2}, \code{badgyal}, \code{beckyg}, \code{calle13}, \code{daddy1}, \code{daddy2}, \code{don}, \code{ivyqueen}, \code{karolg}, \code{natti}, \code{nicky}, \code{ozuna}, \code{planb}, \code{rosalia}, \code{shakira}, \code{wyy}.
+#'@param name Name of the color palette. Current options are \code{aventura}, \code{badbunny1}, \code{badbunny2}, \code{badgyal}, \code{beckyg}, \code{calle13}, \code{daddy1}, \code{daddy2}, \code{don}, \code{ivyqueen}, \code{karolg}, \code{natti}, \code{nicky}, \code{ozuna}, \code{planb}, \code{rosalia}, \code{shakira}, \code{wyy}.
 #'
-#'  @param n Number of colors to be used. Each palette includes up to 9 colors for discrete palettes. Any \code{n} can be chosen for continuous palettes.
+#'@param n Number of colors to be used. Each palette includes up to 9 colors for discrete palettes. Any \code{n} can be chosen for continuous palettes.
 #'
-#'  @param type Usage of palette as "continuous" or "discrete". Continuous palettes interpolate the three first colors of the palette to create a gradient. If not specified, function assumes continuous if n>9 and discrete if n<9.
+#'@param type Usage of palette as "continuous" or "discrete". Continuous palettes interpolate the three first colors of the palette to create a gradient. If not specified, function assumes continuous if n>9 and discrete if n<9.
 #'
-#'  @return A vector of \code{n} colors
+#'@return A vector of \code{n} colors
 #'
-#'  @examples
-#'  latin_palette("rosalia",n=50,type="continuous")
-#'  latin_palette("daddy1",5)
-#'  latin_palette("badgyal",100)
+#'@examples
+#'latin_palette("rosalia",n=50,type="continuous")
+#'
+#'latin_palette("daddy1",5)
+#'
+#'latin_palette("badgyal",100)
 #'
 #' @export
 
 latin_palette <- function(name, n, type = c("discrete", "continuous")) {
 
-  pal <- name
+  pal <- latin_palettes[name]
 
 
   if (is.null(pal)){
