@@ -1,13 +1,8 @@
 # Reggaeton Albums Color Palette Package
 #
-# This is a color palette based on album covers from a selection of latin singers.
-#
-# You can learn more about package authoring with RStudio at:
+# This is a collection of color palettes based on album covers from latin singers.
 #
 #
-#
-#   Install Package:           'Ctrl + Shift + B'
-
 
 
 # 1.Create the color palettes
