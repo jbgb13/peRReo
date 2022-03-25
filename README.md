@@ -150,6 +150,8 @@ latin_palette("calle13",6)
 
 <img src="PalettePics/excalle13.png">
 
+***
+
 ### Continuous Usage 
 
 ```r
@@ -170,5 +172,66 @@ latin_palette("badbunny1",50,type="continuous")
 ## Example Plots
 
 Palettes can be easily integrated into Base R imaging or `ggplot2`
+
+```r
+pal=latin_palette('aventura',100)
+
+ggplot(trees)+
+  geom_point(aes(x=Height,y=Volume,color=Girth))+
+  scale_color_gradientn(colors=rev(pal))+
+  theme_minimal() 
+
+```
+<img src="PalettePics/exaventura.png">
+
+***
+
+```r
+pal=latin_palette('daddy2',5)
+
+ggplot(diamonds, aes(x=price,fill=cut))+
+  geom_density(position='stack')+
+  scale_fill_manual(values=(pal))+
+  theme_minimal()
+
+```
+<img src="PalettePics/exdaddy.png">
+
+***
+
+```r
+pal=latin_palette('ozuna',3)
+
+ggplot(iris,aes(x=Sepal.Width,y=Sepal.Length,color=Species))+
+  geom_point()+
+  scale_color_manual(values=pal)+
+  theme_minimal()
+
+```
+<img src="PalettePics/exozuna.png">
+
+***
+
+```r
+library(gghalves)
+
+pal=rev(latin_palette('calle13',3))
+
+ggplot(ToothGrowth,aes(x=factor(dose),y=len,fill=factor(dose)))+
+  geom_half_violin(side='r',position=position_nudge(x=.3),width=0.3)+
+  geom_half_boxplot( side = 'r',outlier.shape=NA,position=position_nudge(x=.15),
+                     center=TRUE, errorbar.draw = FALSE,width=.15)+
+  geom_point(aes(color=factor(dose)),position=position_jitter(width=.1),size=1)+
+  stat_summary(fun=mean,geom='point',shape=21,fill=NA,size=2)+
+  coord_flip()+
+  scale_fill_manual(values=pal)+
+  scale_color_manual(values=pal)+
+  labs(x='Dose (mg)',y='Length (mm)')+
+  theme_minimal()+
+  theme(legend.position = "none")
+
+```
+<img src="PalettePics/excalle2.png">
+
 
 
