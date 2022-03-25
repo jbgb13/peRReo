@@ -131,12 +131,38 @@ devtools::install_github("jbgb13/peRReo")
 
 ***
 
+
 ## Building Palettes
 
+Use the `latin_palette()` function to build and view palettes. Inputs are 'name', 'n', and 'type' (continuous or discrete). 'Name' is required. If 'n' is blank, function will assume n is equal to the number of colors in the palette (9), but if n > palette length, it will automatically interpolate colors between. If 'type' is missing, the function will assume "discrete" if n < palette length, and "continuous" if n > palette length. 
+
+### Discrete Usage
+
+```r
+latin_palette("badgyal",n=4,type="discrete")
+```
+<img src="PalettePics/exbadgyal.png">
 
 
+```r
+latin_palette("calle13",6)
+```
+
+<img src="PalettePics/excalle13.png">
+
+### Continuous Usage 
+
+```r
+latin_palette("rosalia",20)
+```
+
+<img src="PalettePics/exrosalia.png">
 
 
+```r
+latin_palette("badbunny1",50,type="continuous")
+```
 
+<img src="PalettePics/exbadbunny1.png">
 
 
