@@ -166,3 +166,9 @@ latin_palette("badbunny1",50,type="continuous")
 <img src="PalettePics/exbadbunny1.png">
 
 
+
+## Example Plots
+
+Palettes can be easily integrated into Base R imaging or `ggplot2`
+
+
