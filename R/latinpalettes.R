@@ -94,6 +94,28 @@ latin_palette <- function(name, n, type = c("discrete", "continuous")) {
 
 }
 
+#' @export
+
+
+# 3. Palette Print Function
+#::::::::::::::::::::::::::::::::::::::::
+#' @importFrom graphics rect par image text
+#' @importFrom stats median
+#'
+print.latinpalette <- function(x, ...) {
+  pallength <- length(x)
+  latinpar <- par(mar=c(0.25,0.25,0.25,0.25))
+  on.exit(par(latinpar))
+
+  image(1:pallength, 1,
+        as.matrix(1:pallength),
+        col = x,
+        axes=FALSE)
+
+  text(median(1:pallength), 1,
+       labels = paste0(attr(x,"name"),", n=",pallength),
+       cex = 3, family = "sans")
+}
 
 
 
