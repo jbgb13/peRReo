@@ -1,6 +1,6 @@
 # peRReo
 
-Who doesn't listen to reggaeton to survive the hours spent in editing a single graph in ggplot? Now you can complete your experience using color palettes based on reggaeton/latin artists for your graphs in R. 
+Who doesn't listen to reggaeton to survive the hours spent in editing a single graph in ggplot? Now you can complete your experience using color palettes based on reggaeton/latin artists for your graphs in R. Make sure _your graphs don't lie_.
 
 These palettes have been created from the album covers' colors using the [`paletter`](https://github.com/AndreaCirilloAC/paletter) package for palette extraction, and edited manually to improve both aesthetics and inclusivity. All continuous palettes except for "ozuna" and "rosalia" have been successfully checked for color-blind safety using [Chroma.js Color Palette Helper](https://gka.github.io/palettes/#/9|s|00429d,96ffea,ffffe0|ffffe0,ff005e,93003a|1|1). 
 
