@@ -233,5 +233,11 @@ ggplot(ToothGrowth,aes(x=factor(dose),y=len,fill=factor(dose)))+
 ```
 <img src="PalettePics/excalle2.png">
 
+***
+
+### Contact
+
+You can reach me at <juanbgonzalezblanco@gmail.com> or 
+[@JuanBGonzalez13](https://twitter.com/JuanBGonzalez13) 
 
 
