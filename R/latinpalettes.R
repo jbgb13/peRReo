@@ -10,8 +10,8 @@
 #' Complete list of palettes
 #'
 #' Use \code{names(latin_palettes)} to view list of palette names.
-#' Currently:  aventura, badbunny1, badbunny2, badgyal, beckyg, calle13, daddy1, daddy2,
-#' don, ivyqueen, karolg, natti, nicky, ozuna, planb, rosalia, shakira, wyy.
+#' Currently:  aventura, badbunny1, badbunny2, badgyal, beckyg, buenavista, calle13, daddy1, daddy2,
+#' don, ivyqueen, karolg, natti, nicky, ozuna, planb, rauw, rosalia, shakira, wyy.
 #'
 #' @export
 
