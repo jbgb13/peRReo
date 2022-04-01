@@ -59,6 +59,12 @@ devtools::install_github("jbgb13/peRReo")
 
 ***
 
+### Buena Vista Social Club
+<img src="PalettePics/buenavista.png">
+- Buena Vista Social Club | Buena Vista Social Club (1997)
+
+***
+
 ### Calle 13
 <img src="PalettePics/calle13.png">
 - Calle 13 | Calle 13 (2005)
@@ -110,6 +116,12 @@ devtools::install_github("jbgb13/peRReo")
 ### Ozuna
 <img src="PalettePics/ozuna.png">
 - Ozuna | Este Loko (2021)
+
+***
+
+### Rauw Alejandro
+<img src="PalettePics/rauw.png">
+- Rauw Alejandro | Vice Versa (2021)
 
 ***
 
