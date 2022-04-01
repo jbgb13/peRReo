@@ -157,10 +157,10 @@ latin_palette("badgyal",n=4,type="discrete")
 
 
 ```r
-latin_palette("calle13",6)
+latin_palette("buenavista",9)
 ```
 
-<img src="PalettePics/excalle13.png">
+<img src="PalettePics/exbuenavista.png">
 
 ***
 
